@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "146772110422",
+    "firebase_url": "https://orion-tiet.firebaseio.com",
+    "project_id": "orion-tiet",
+    "storage_bucket": "orion-tiet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146772110422:android:6250a4d77948be78",
+        "android_client_info": {
+          "package_name": "co.shivamgoyal.orion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146772110422-tmh5ldpncgktfhrbhcio1pks2025pso5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.shivamgoyal.orion",
+            "certificate_hash": "2b21247f152b8af43be6f95f6bd812bbaf66b4bc"
+          }
+        },
+        {
+          "client_id": "146772110422-2905cqoqbegge9gimtqjpdlprqd9288r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.shivamgoyal.orion",
+            "certificate_hash": "2895557b43228ec2a0650d18f9d5d60b71545129"
+          }
+        },
+        {
+          "client_id": "146772110422-3qpe8a10437knpjt70uh761nlgehr6ju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEepvkN-a41oK08fm2psBdpASg3pDc0oQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146772110422-3qpe8a10437knpjt70uh761nlgehr6ju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
