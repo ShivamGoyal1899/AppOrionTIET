@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../FestScreens/FestHomeScreen.dart';
-import 'GoogleFacebookAuthMethods.dart';
+import '../DrawerScreens/navigationHomeScreen.dart';
+import 'authMethods.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -9,9 +9,11 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  final _scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       backgroundColor: Colors.white,
       body: Container(
         decoration: BoxDecoration(
@@ -45,20 +47,12 @@ class _LoginScreenState extends State<LoginScreen> {
                       ? Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) {
-                              return FestHomeScreen();
+                              return NavigationHomeScreen();
                             },
                           ),
                         )
-                      : showDialog(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return AlertDialog(
-                              title: Text("Login Failed"),
-                              content: Text(
-                                  "Please login with your Google Account to proceed."),
-                            );
-                          },
-                        );
+                      : _scaffoldKey.currentState.showSnackBar(SnackBar(
+                          content: Text("Login failed. Please try again.")));
                 });
               },
               child: Container(

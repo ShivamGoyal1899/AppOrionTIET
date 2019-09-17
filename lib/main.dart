@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'screens/AuthenticationScreens/LoginScreen.dart';
+import 'screens/AuthenticationScreens/loginScreen.dart';
 
 void main() {
   SystemChrome.setPreferredOrientations(

@@ -2,11 +2,14 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
-final GoogleSignIn googleSignIn = GoogleSignIn();
 
-String name = "Orion Admin";
-String email = "admin@oriontiet.co";
-String imageUrl = "https://shivamgoyal.co/favicon.png";
+String name = "Anonymous";
+String email = "anonymous@oriontiet.co";
+String imageUrl = "https://jumpcloud.com/wp-content/uploads/2017/09/User-Square-Icon.png";
+
+// GOOGLE AUTH
+
+final GoogleSignIn googleSignIn = GoogleSignIn();
 
 Future<String> signInWithGoogle() async {
   final GoogleSignInAccount googleSignInAccount = await googleSignIn.signIn();
@@ -39,8 +42,8 @@ Future<String> signInWithGoogle() async {
 
 void signOutGoogle() async {
   await googleSignIn.signOut();
-  name = "Orion Admin";
-  email = "admin@oriontiet.co";
-  imageUrl = "https://shivamgoyal.co/favicon.png";
+  name = "Anonymous";
+  email = "anonymous@oriontiet.co";
+  imageUrl = "https://jumpcloud.com/wp-content/uploads/2017/09/User-Square-Icon.png";
   print("User Sign Out");
 }

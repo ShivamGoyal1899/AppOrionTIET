@@ -1,6 +1,5 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
+import 'dart:async';
 import 'custom_page_routes.dart';
 import '../../models/festModel.dart';
 import 'planet_page.dart';

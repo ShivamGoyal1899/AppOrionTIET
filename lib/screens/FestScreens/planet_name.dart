@@ -1,6 +1,5 @@
-import 'dart:math' as Math;
-
 import 'package:flutter/material.dart';
+import 'dart:math' as Math;
 
 class PlanetName extends StatefulWidget {
   final String name;

@@ -1,10 +1,7 @@
-import 'dart:async';
-
-import '../AppDrawer.dart';
 import 'package:flutter/material.dart';
-
-import 'astronaut.dart';
+import 'dart:async';
 import '../../models/festModel.dart';
+import 'astronaut.dart';
 import 'planet_name.dart';
 import 'planet_selector.dart';
 
@@ -41,7 +38,6 @@ class _FestHomeScreenState extends State<FestHomeScreen> {
   Widget build(BuildContext context) {
     final Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
-      drawer: MyDrawer(),
       backgroundColor: Colors.white,
       body: Stack(
         children: <Widget>[
